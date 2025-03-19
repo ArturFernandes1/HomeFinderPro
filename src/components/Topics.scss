@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.global-tree {
+    background-color: #FAF8EC;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+
+    .title-h1 {
+        font-size: 1.6rem;
+        text-align: center;
+        letter-spacing: -1px;
+        padding-top: 10px;
+    }
+
+    .sub-title-h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .topics-container {
+        max-width: 1200px;
+        padding: 40px;
+        margin: auto;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 280px  280px 280px;
+       
+        padding: 10px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .sub-topics-1, .sub-topics-2 {
+        background-color: #E3CE9E;
+        gap: 10px;
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+        h2 {
+            text-align: center;
+            color: #864C24;
+            font-size: 1.3rem;
+        }
+      }
+    
+      .sub-topics-2 {
+        background-color: #864C24;
+    
+        h2 {
+            text-align: center;
+            color: #E3CE9E;
+            font-size: 1.3rem;              
+        }
+    }
+  
+}
+
+@media screen and (min-width: 729px) and (max-width: 988px) {
+    .topics-container {
+        padding: 20px;     
+        flex-direction: column;
+
+        .title-h1 {
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 15 px;
+         
+       
+        }
+    
+        .sub-title-h2 {
+            font-size: 1.1rem;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+    .container {
+        display: grid;
+        grid-template-columns: 200px  200px 200px;
+        padding: 10px;
+        gap: 10px;
+    
+        }
+          
+    }
+
+}
+
+
+
+@media screen and (max-width: 728px) {
+    .topics-container {
+        padding: 20px;     
+        flex-direction: column;
+    
+    .title-h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 15 px;
+     
+   
+    }
+
+    .sub-title-h2 {
+        font-size: 1.1rem;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 180px  180px;
+        padding: 10px;
+        gap: 5px;
+    
+        }
+          
+    }
+
+}
+

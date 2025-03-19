@@ -1,0 +1,46 @@
+/* Altera a cor de fundo do navbar */
+*{
+    margin: 0;
+}
+
+.navbar {
+    background-color: #864C24 !important; /* Cor do fundo - azul */
+}
+  
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 4px; // Espaço entre os links
+}
+
+.navbar-nav .nav-link {
+      color: #E3CE9E !important; /* Marrom avermelhado */
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+}
+    
+    .navbar-nav .nav-link:hover {
+        color: #aa7676 !important; /* Vermelho mais escuro ao passar o mouse */
+}
+
+ /* Altera a cor do botão da navbar-toggler */
+ @media screen and (max-width:998px) {
+
+    .navbar-nav{
+        flex-direction: column; // Faz os links ficarem empilhados
+        align-items: center; // Centraliza os itens no eixo horizontal
+        text-align: left; 
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+
+    .navbar-nav{
+        flex-direction: column; // Faz os links ficarem empilhados
+        align-items: center; // Centraliza os itens no eixo horizontal
+        text-align: left; 
+    }
+}
+

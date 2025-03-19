@@ -1,0 +1,51 @@
+.navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+
+    
+
+    outline: none !important; 
+    box-shadow: none !important; 
+}
+
+/* Remove o contorno azul ao clicar */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.icon-bar {
+    width: 35px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: #2e2b2b;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Quando o menu está aberto, as barras viram um "X" */
+.toggler-open .icon-bar:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+}
+
+.toggler-open .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.toggler-open .icon-bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Efeito suave ao fechar */
+.toggler-open {
+    transform: rotate(180deg);
+}
